@@ -54,7 +54,6 @@ export const HeaderTextContainer = styled.div`
 
 export const HeaderTitle = styled.h1`
   font-size: 3rem;
-
 `;
 
 export const HeaderSubtitle = styled.h2`
@@ -63,7 +62,7 @@ export const HeaderSubtitle = styled.h2`
 `;
 
 export const MainContent = styled.div`
-`
+`;
 
 export const TechnologiesContainer = styled.section`
   margin: 1rem 0;
@@ -75,26 +74,3 @@ export const Technologies = styled.h3`
   padding: 0 2rem;
 `;
 
-export const Footer = styled.footer`
-  background-color: ${props => props.theme.backgroundSecondary};
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: space-evenly;
-  padding: 0.5rem 20%;
-
-  @media (min-width: ${size.tablet}) {
-    flex-direction: row;
-  }
-`;
-
-export const FooterItem = styled.p`
-  font-size: 0.8em;
-  margin: 0.2rem 0;
-  font-weight: bold;
-  color: ${props => props.theme.textSecondary};
-
-  &:hover {
-    color: ${props => props.theme.textPrimary};
-  }
-`;

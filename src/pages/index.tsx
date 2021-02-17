@@ -1,8 +1,6 @@
 import React from 'react';
 import {
   Container,
-  Footer,
-  FooterItem,
   Header,
   HeaderPicture,
   HeaderSubtitle,
@@ -11,11 +9,11 @@ import {
   MainContent,
   Technologies,
   TechnologiesContainer,
-} from '../styles/HomeStyles';
+} from './HomeStyles';
 import Project from '../models/Project';
 import ProjectShowcase from '../components/ProjectShowcase';
-import Link from 'next/link';
 import Head from 'next/head';
+import Footer from '../components/Footer/Footer';
 
 const projects: Project[] = [
   {
@@ -88,12 +86,7 @@ export default function Home() {
           </TechnologiesContainer>
           <ProjectShowcase projects={projects} />
         </MainContent>
-        <Footer>
-          <a href='https://github.com/MarcDonald/MarcDonald.github.io'><FooterItem>Website Code</FooterItem></a>
-          <Link href='/oss'><a><FooterItem>OSS Used</FooterItem></a></Link>
-          <a href='https://github.com/MarcDonald'><FooterItem>GitHub</FooterItem></a>
-          <a href='https://twitter.com/DeveloperMarc'><FooterItem>Twitter</FooterItem></a>
-        </Footer>
+        <Footer />
       </Container>
     </>
   );

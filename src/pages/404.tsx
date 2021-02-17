@@ -9,13 +9,13 @@ const PageContainer = styled.div`
 `;
 
 const ContentContainer = styled.div`
-  margin:0 25%;
+  margin: 0 25%;
   height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-`
+`;
 
 const Title = styled.h1`
   color: ${props => props.theme.textPrimary};
@@ -46,9 +46,9 @@ export default function NotFound() {
         <title>Not Found</title>
       </Head>
       <ContentContainer>
-      <Title>404</Title>
-      <Subtitle>Page Not Found</Subtitle>
-      <Link href='/'><HomeButton>Return Home</HomeButton></Link>
+        <Title>404</Title>
+        <Subtitle>Page Not Found</Subtitle>
+        <Link href='/'><HomeButton>Return Home</HomeButton></Link>
       </ContentContainer>
     </PageContainer>
   );

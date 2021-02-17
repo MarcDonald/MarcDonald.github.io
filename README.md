@@ -3,24 +3,41 @@
 My personal portfolio website written in React using Next JS and Styled Components
 
 ## Open Source Licenses
-### [Google Material Design Icons](https://material.io/tools/icons/)
 
-Apache 2 License
+### [Montserrat](https://fonts.google.com/specimen/Montserrat)
 
-### [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+Open Font License
 
-Apache 2 License
+### [React](https://reactjs.org/)
+
+MIT License
+
+### [Next.js](https://nextjs.org/)
+
+MIT License
+
+### [Styled Components](https://styled-components.com/)
+
+MIT License
+
+### [TypeScript](https://www.typescriptlang.org/)
+
+Apache 2.0 License
+
+### [Prettier](https://prettier.io/)
+
+MIT License
 
 ## Acknowledgements
+
 Screenshots made with the help of [App Mockup](https://app-mockup.com)
 
-Favicons made with the help of [Real Favicon Generator](https://realfavicongenerator.net/)
-
 ## License
+
 ```   
 The MIT License (MIT)
 
-Copyright (c) 2020 Marc Donald
+Copyright (c) 2021 Marc Donald
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

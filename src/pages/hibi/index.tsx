@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { Container } from './HibiStyles';
 
 export default function Hibi() {
   return (
@@ -22,7 +23,7 @@ export default function Hibi() {
         <meta name='theme-color' content='#212121' />
         {/*End Favicons*/}
       </Head>
-      <div>Hibi</div>
+      <Container><h1>Hibi</h1></Container>
     </>
   );
 }

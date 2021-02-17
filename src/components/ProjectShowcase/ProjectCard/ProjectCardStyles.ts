@@ -1,28 +1,10 @@
 import styled from 'styled-components';
 import { size } from '../../../utils/Breakpoints';
+import { Card } from '../../../styles/Global';
 
-export const Container = styled.div`
-  background-color: ${props => props.theme.backgroundSecondary};
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 0 1rem;
+export const Container = styled(Card)`
   display: grid;
   grid-template-rows: repeat(4, auto) 6rem;
-
-  :hover {
-    background-color: ${props => props.theme.backgroundSecondaryFocus};
-  }
-
-  @media (min-width: ${size.tablet}) {
-    border-radius: 1rem;
-    padding-bottom: 1rem;
-
-    :hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-      transform: scale(1.01);
-      transition-duration: 200ms;
-    }
-  }
 
   @media (min-width: ${size.desktop}) {
     grid-template-rows: repeat(3, auto) 6rem;
@@ -44,11 +26,11 @@ export const Header = styled.div`
 `;
 
 export const HeaderText = styled.h4`
-  `
+`;
 
 export const DescriptionContainer = styled.div`
   align-self: center;
-  
+
   @media (min-width: ${size.desktop}) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -59,7 +41,7 @@ export const ImageContainer = styled.div`
   margin: 0.6em;
   min-height: 38rem;
   max-height: 38rem;
-  
+
   @media (min-width: ${size.tablet}) {
     min-height: 30rem;
     max-height: 30rem;

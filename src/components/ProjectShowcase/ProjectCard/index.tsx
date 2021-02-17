@@ -31,7 +31,7 @@ export default function ProjectCard(props: ProjectCardPropTypes) {
       </DescriptionContainer>
 
       <ImageContainer>
-        <Image src={props.img} alt={props.title}  />
+        <Image src={props.img} alt={props.title} />
       </ImageContainer>
 
       <TechnologiesContainer>

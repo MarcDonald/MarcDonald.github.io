@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProjectsGrid, ProjectShowcaseTitle, Container } from './ProjectShowcaseStyles';
+import { Container, ProjectsGrid, ProjectShowcaseTitle } from './ProjectShowcaseStyles';
 import ProjectCard from './ProjectCard';
 import Project from '../../models/Project';
 
