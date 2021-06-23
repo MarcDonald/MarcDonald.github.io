@@ -50,7 +50,7 @@ export default function OSS() {
       <Head>
         <meta charSet='UTF-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+        <meta httpEquiv='X-UA-Compatible' content='ie=edge' />
         <meta name='msapplication-TileColor' content='#212121' />
         <meta name='theme-color' content='#212121' />
         <meta name='robots' content='noindex' />

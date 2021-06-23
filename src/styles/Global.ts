@@ -28,13 +28,13 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Card = styled.div`
-  background-color: ${props => props.theme.backgroundSecondary};
+  background-color: ${(props) => props.theme.backgroundSecondary};
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 0 1rem;
 
   :hover {
-    background-color: ${props => props.theme.backgroundSecondaryFocus};
+    background-color: ${(props) => props.theme.backgroundSecondaryFocus};
   }
 
   @media (min-width: ${size.tablet}) {
@@ -46,6 +46,37 @@ export const Card = styled.div`
       transform: scale(1.01);
       transition-duration: 200ms;
     }
+  }
+`;
+
+export const CTAButton = styled.button`
+  border: none;
+  font-size: 1.4rem;
+  background-color: ${(props) => props.theme.main};
+  cursor: pointer;
+  color: ${(props) => props.theme.textPrimary};
+  font-weight: bold;
+  padding: 0.6rem 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition-duration: 200ms;
+
+  :hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-10%);
+    background-color: ${(props) => props.theme.mainLight};
+  }
+
+  @media (min-width: ${size.tablet}) {
+    font-size: 1.1rem;
+  }
+
+  @media (min-width: ${size.smallDesktop}) {
+    font-size: 1.4rem;
+  }
+
+  @media (min-width: ${size.desktop}) {
+    font-size: 1rem;
   }
 `;
 

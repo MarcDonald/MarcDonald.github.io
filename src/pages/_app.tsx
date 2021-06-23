@@ -8,6 +8,7 @@ const GlobalStyle = Global;
 
 const darkTheme = {
   main: '#FF9700',
+  mainLight: '#FFA51F',
   background: '#212121',
   backgroundSecondary: '#303030',
   backgroundSecondaryFocus: '#393939',
@@ -17,7 +18,6 @@ const darkTheme = {
 };
 
 export default function App({ Component, pageProps }: AppProps) {
-
   return (
     <>
       <GlobalStyle />

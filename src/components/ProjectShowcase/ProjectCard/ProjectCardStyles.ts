@@ -82,32 +82,3 @@ export const CTAContainer = styled.div`
     grid-column-end: 3;
   }
 `;
-
-
-export const CTAButton = styled.button`
-  border: none;
-  font-size: 1.4rem;
-  background-color: ${props => props.theme.main};
-  cursor: pointer;
-  color: ${props => props.theme.textPrimary};
-  font-weight: bold;
-  padding: 0.6rem 5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
-  :hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  @media (min-width: ${size.tablet}) {
-    font-size: 1.1rem;
-  }
-
-  @media (min-width: ${size.smallDesktop}) {
-    font-size: 1.4rem;
-  }
-
-  @media (min-width: ${size.desktop}) {
-    font-size: 1rem;
-  }
-`;

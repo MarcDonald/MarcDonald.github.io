@@ -1,11 +1,6 @@
 import React from 'react';
 import {
   Container,
-  Header,
-  HeaderPicture,
-  HeaderSubtitle,
-  HeaderTextContainer,
-  HeaderTitle,
   MainContent,
   Technologies,
   TechnologiesContainer,
@@ -14,6 +9,7 @@ import Project from '../models/Project';
 import ProjectShowcase from '../components/ProjectShowcase';
 import Head from 'next/head';
 import Footer from '../components/Footer/Footer';
+import PictureHeader from '../components/PictureHeader';
 
 const projects: Project[] = [
   {
@@ -24,11 +20,11 @@ const projects: Project[] = [
     technologies: ['Kotlin', 'MVVM', 'Jisho.org API', 'Kodein DI'],
   },
   {
-    title: 'Earworm',
-    link: 'https://github.com/MarcDonald/earworm',
-    description: 'Keep track of your music taste over time',
-    imagePath: 'earworm/main-display-dark.png',
-    technologies: ['Kotlin', 'MVVM', 'LiveData'],
+    title: 'Event Management System',
+    link: '/event-management-system',
+    description: 'A system for the management of event security and stewards. Final year university project',
+    imagePath: 'https://placekitten.com/200/400',
+    technologies: ['DynamoDB', 'AWS Lambda', 'AWS CDK', 'React', 'Kotlin Compose'],
   },
   {
     title: 'Twitch Spotify Request Bot',
@@ -54,7 +50,7 @@ export default function Home() {
         <meta name='description' content='Marc Donald - Associate Software Engineer' />
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+        <meta httpEquiv='X-UA-Compatible' content='ie=edge' />
         <meta name='msapplication-TileColor' content='#212121' />
         <meta name='theme-color' content='#212121' />
         <meta name='theme-color' content='#FAFAFA' />
@@ -71,15 +67,7 @@ export default function Home() {
         <link rel='apple-touch-icon' href='home/favicons/favicon-152.png' sizes='152x152' />
       </Head>
       <Container>
-        <Header>
-          <HeaderPicture
-            src='https://avatars2.githubusercontent.com/u/19517260'
-            alt='Marc Donald' />
-          <HeaderTextContainer>
-            <HeaderTitle>Marc Donald</HeaderTitle>
-            <HeaderSubtitle>Associate Software Engineer</HeaderSubtitle>
-          </HeaderTextContainer>
-        </Header>
+        <PictureHeader title='Marc Donald' subtitle='Associate Software Engineer' image='https://avatars2.githubusercontent.com/u/19517260' />
         <MainContent>
           <TechnologiesContainer>
             <Technologies>Full Stack Associate Software Engineer with experience in Android, Spring, NodeJS, AWS, React, Angular, and more</Technologies>
