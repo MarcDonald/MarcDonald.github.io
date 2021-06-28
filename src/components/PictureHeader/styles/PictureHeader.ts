@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { size } from '../../utils/Breakpoints';
+import { size } from 'utils/Breakpoints';
 
 export const Header = styled.header`
   display: grid;
@@ -8,7 +8,7 @@ export const Header = styled.header`
   justify-items: center;
   text-align: center;
   padding: 1rem 0;
-  background-color: ${props => props.theme.backgroundSecondary};
+  background-color: ${(props) => props.theme.backgroundSecondary};
 
   @media (min-width: ${size.desktop}) {
     display: grid;
@@ -49,5 +49,5 @@ export const HeaderTitle = styled.h1`
 
 export const HeaderSubtitle = styled.h2`
   font-size: 1.3rem;
-  color: ${props => props.theme.textSecondary};
+  color: ${(props) => props.theme.textSecondary};
 `;

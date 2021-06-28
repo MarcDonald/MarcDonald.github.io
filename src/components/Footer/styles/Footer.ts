@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { size } from '../../utils/Breakpoints';
+import { size } from 'utils/Breakpoints';
 
-export const Container = styled.footer`
-  background-color: ${props => props.theme.backgroundSecondary};
+export const FooterWrapper = styled.footer`
+  background-color: ${(props) => props.theme.backgroundSecondary};
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -18,9 +18,9 @@ export const FooterItem = styled.p`
   font-size: 0.8em;
   margin: 0.2rem 0;
   font-weight: bold;
-  color: ${props => props.theme.textSecondary};
+  color: ${(props) => props.theme.textSecondary};
 
   &:hover {
-    color: ${props => props.theme.textPrimary};
+    color: ${(props) => props.theme.textPrimary};
   }
 `;

@@ -1,23 +1,33 @@
 import React from 'react';
-import { Container, ProjectsGrid, ProjectShowcaseTitle } from './ProjectShowcaseStyles';
-import ProjectCard from './ProjectCard';
-import Project from '../../models/Project';
+import {
+  ProjectsGrid,
+  ProjectShowcaseTitle,
+  Wrapper,
+} from './styles/ProjectShowcase';
+import ProjectCard from 'components/ProjectCard';
+import Project from 'models/Project';
 
 interface ProjectShowcasePropTypes {
-  projects: Project[]
+  projects: Project[];
 }
 
 export default function Index({ projects }: ProjectShowcasePropTypes) {
   return (
-    <Container>
+    <Wrapper>
       <ProjectShowcaseTitle>Projects</ProjectShowcaseTitle>
       <ProjectsGrid>
         {projects.map((project, index) => (
-          <ProjectCard key={project.title} title={project.title} description={project.description}
-                       technologies={project.technologies} img={project.imagePath} link={project.link}
-                       isAlt={index % 2 === 0} />
+          <ProjectCard
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            technologies={project.technologies}
+            img={project.imagePath}
+            link={project.link}
+            isAlt={index % 2 === 0}
+          />
         ))}
       </ProjectsGrid>
-    </Container>
+    </Wrapper>
   );
 }

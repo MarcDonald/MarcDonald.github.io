@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { size } from '../../utils/Breakpoints';
-import { Card } from '../../styles/Global';
+import { Card } from 'styles/Global';
 
-export const Container = styled.div`
+export const OuterCard = styled.div`
   height: 100vh;
   min-height: 100vh;
   width: 100vw;
@@ -12,7 +11,10 @@ export const Container = styled.div`
 
 export const Title = styled.h1``;
 
-export const Subtitle = styled.h2``;
+export const Subtitle = styled.h2`
+  font-size: 1.2rem;
+  font-weight: normal;
+`;
 
 export const InnerCard = styled(Card)`
   padding: 1rem;

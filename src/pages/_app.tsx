@@ -1,8 +1,8 @@
 import React from 'react';
 import { AppProps } from 'next/app';
-import '../styles/main.css';
+import 'styles/main.css';
 import { ThemeProvider } from 'styled-components';
-import Global from '../styles/Global';
+import Global from 'styles/Global';
 
 const GlobalStyle = Global;
 

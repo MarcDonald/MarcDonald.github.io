@@ -1,6 +1,6 @@
 import React from 'react';
-import OpenSourceSoftware from '../../models/OpenSourceSoftware';
-import { Container, Description, License, Name } from './OSSCardStyles';
+import OpenSourceSoftware from 'models/OpenSourceSoftware';
+import { CardWrapper, Description, License, Name } from './styles/OSSCard';
 import Link from 'next/link';
 
 interface OSSCardPropTypes {
@@ -10,11 +10,11 @@ interface OSSCardPropTypes {
 export default function OSSCard({ oss }: OSSCardPropTypes) {
   return (
     <Link href={oss.link}>
-      <Container>
+      <CardWrapper>
         <Name>{oss.name}</Name>
         <Description>{oss.description}</Description>
         <License>{oss.license}</License>
-      </Container>
+      </CardWrapper>
     </Link>
   );
 }

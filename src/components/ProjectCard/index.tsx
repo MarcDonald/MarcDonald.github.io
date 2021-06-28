@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Container,
+  CardWrapper,
   CTAContainer,
   DescriptionContainer,
   Header,
@@ -9,9 +9,9 @@ import {
   ImageContainer,
   TechnologiesContainer,
   TechnologiesTitle,
-} from './ProjectCardStyles';
+} from './styles/ProjectCard';
 import Link from 'next/link';
-import { CTAButton } from '../../../styles/Global';
+import { CTAButton } from 'styles/Global';
 
 interface ProjectCardPropTypes {
   title: string;
@@ -24,7 +24,7 @@ interface ProjectCardPropTypes {
 
 export default function ProjectCard(props: ProjectCardPropTypes) {
   return (
-    <Container>
+    <CardWrapper>
       <Header>
         <HeaderText>{props.title}</HeaderText>
       </Header>
@@ -46,6 +46,6 @@ export default function ProjectCard(props: ProjectCardPropTypes) {
           <CTAButton>More Info</CTAButton>
         </Link>
       </CTAContainer>
-    </Container>
+    </CardWrapper>
   );
 }

@@ -1,13 +1,13 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import { px2vw } from '../utils/StyleUtils';
-import { size } from '../utils/Breakpoints';
+import { px2vw } from 'utils/StyleUtils';
+import { size } from 'utils/Breakpoints';
 
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', serif;
   }
 
   :root {

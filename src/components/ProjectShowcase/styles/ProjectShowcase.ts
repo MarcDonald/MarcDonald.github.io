@@ -1,12 +1,10 @@
 import styled from 'styled-components';
-import { size } from '../../utils/Breakpoints';
+import { size } from 'utils/Breakpoints';
 
-export const Container = styled.section`
-
-`;
+export const Wrapper = styled.section``;
 
 export const ProjectShowcaseTitle = styled.h4`
-  background-color: ${props => props.theme.background};
+  background-color: ${(props) => props.theme.background};
   position: sticky;
   top: 0;
   font-size: 1.6rem;

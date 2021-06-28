@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Card } from '../../styles/Global';
+import { Card } from 'styles/Global';
 
-export const Container = styled(Card)`
+export const CardWrapper = styled(Card)`
   cursor: pointer;
   display: grid;
   grid-template-columns: 100%;

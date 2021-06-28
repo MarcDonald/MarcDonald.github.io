@@ -4,7 +4,7 @@ My personal portfolio website written in React using Next JS and Styled Componen
 
 ## Open Source Licenses
 
-### [Montserrat](https://fonts.google.com/specimen/Montserrat)
+### [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 
 Open Font License
 

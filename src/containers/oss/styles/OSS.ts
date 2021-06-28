@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { size } from '../../utils/Breakpoints';
+import { size } from 'utils/Breakpoints';
 
-export const Container = styled.div`
-  background: ${props => props.theme.background};
-  color: ${props => props.theme.textPrimary};
+export const Wrapper = styled.div`
+  background: ${(props) => props.theme.background};
+  color: ${(props) => props.theme.textPrimary};
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const Header = styled.header`
   padding: 1rem 0;
-  background-color: ${props => props.theme.backgroundSecondary};
+  background-color: ${(props) => props.theme.backgroundSecondary};
   text-align: center;
 `;
 
@@ -20,9 +20,7 @@ export const HeaderTitle = styled.h1`
   font-size: 3rem;
 `;
 
-export const MainContent = styled.div`
-
-`;
+export const MainContent = styled.div``;
 
 export const SectionExplanation = styled.h3`
   margin: 1rem 0;

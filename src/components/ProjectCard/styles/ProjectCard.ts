@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { size } from '../../../utils/Breakpoints';
-import { Card } from '../../../styles/Global';
+import { size } from 'utils/Breakpoints';
+import { Card } from 'styles/Global';
 
-export const Container = styled(Card)`
+export const CardWrapper = styled(Card)`
   display: grid;
   grid-template-rows: repeat(4, auto) 6rem;
 
@@ -25,8 +25,7 @@ export const Header = styled.div`
   }
 `;
 
-export const HeaderText = styled.h4`
-`;
+export const HeaderText = styled.h4``;
 
 export const DescriptionContainer = styled.div`
   align-self: center;

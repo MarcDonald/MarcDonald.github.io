@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Head from 'next/head';
 
 const PageContainer = styled.div`
-  background: ${props => props.theme.background};
+  background: ${(props) => props.theme.background};
   height: 100vh;
 `;
 
@@ -18,20 +18,20 @@ const ContentContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  color: ${props => props.theme.textPrimary};
+  color: ${(props) => props.theme.textPrimary};
   font-size: 20rem;
 `;
 
 const Subtitle = styled.h2`
-  color: ${props => props.theme.textSecondary};
+  color: ${(props) => props.theme.textSecondary};
   font-size: 3rem;
 `;
 
 const HomeButton = styled.a`
   text-decoration: none;
   font-weight: bold;
-  color: ${props => props.theme.textPrimary};
-  background: ${props => props.theme.main};
+  color: ${(props) => props.theme.textPrimary};
+  background: ${(props) => props.theme.main};
   border-radius: 15px;
   text-align: center;
   margin-top: 3em;
@@ -48,7 +48,9 @@ export default function NotFound() {
       <ContentContainer>
         <Title>404</Title>
         <Subtitle>Page Not Found</Subtitle>
-        <Link href='/'><HomeButton>Return Home</HomeButton></Link>
+        <Link href="/">
+          <HomeButton>Return Home</HomeButton>
+        </Link>
       </ContentContainer>
     </PageContainer>
   );

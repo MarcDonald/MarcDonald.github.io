@@ -1,5 +1,11 @@
 import React from 'react';
-import { Header, HeaderPicture, HeaderSubtitle, HeaderTextContainer, HeaderTitle } from './PictureHeaderStyles';
+import {
+  Header,
+  HeaderPicture,
+  HeaderSubtitle,
+  HeaderTextContainer,
+  HeaderTitle,
+} from './styles/PictureHeader';
 
 interface PictureHeaderProps {
   title: string;
@@ -7,12 +13,14 @@ interface PictureHeaderProps {
   image: string;
 }
 
-export default function PictureHeader({ title, subtitle, image }: PictureHeaderProps) {
+export default function PictureHeader({
+  title,
+  subtitle,
+  image,
+}: PictureHeaderProps) {
   return (
     <Header>
-      <HeaderPicture
-        src={image}
-        alt={title} />
+      <HeaderPicture src={image} alt={title} />
       <HeaderTextContainer>
         <HeaderTitle>{title}</HeaderTitle>
         {subtitle && <HeaderSubtitle>{subtitle}</HeaderSubtitle>}

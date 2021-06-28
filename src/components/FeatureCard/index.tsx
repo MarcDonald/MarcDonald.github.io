@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Container, InnerCard, Title, Subtitle } from './FeatureCardStyles';
+import { InnerCard, OuterCard, Subtitle, Title } from './styles/FeatureCard';
 
 interface FeatureCardProps {
   children: ReactNode;
@@ -13,12 +13,12 @@ export default function FeatureCard({
   subtitle,
 }: FeatureCardProps) {
   return (
-    <Container>
+    <OuterCard>
       <InnerCard>
         {title && <Title>{title}</Title>}
         {subtitle && <Subtitle>{subtitle}</Subtitle>}
         {children}
       </InnerCard>
-    </Container>
+    </OuterCard>
   );
 }

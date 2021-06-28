@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { Card } from '../../styles/Global';
-import FeatureCard from '../../components/FeatureCard';
+import { Card } from 'styles/Global';
 
-export const Container = styled.div`
+export const Wrapper = styled.div`
   background: ${(props) => props.theme.background};
   color: ${(props) => props.theme.textPrimary};
   min-height: 100vh;
@@ -14,37 +13,30 @@ export const FullscreenContent = styled.div`
   max-width: 100vw;
 `;
 
-export const InnerCard = styled(Card)`
-  padding: 1rem;
-  border-radius: 1rem;
-  height: 100%;
-  width: 100%;
-`;
-
 export const Hero = styled(FullscreenContent)`
   display: flex;
   flex-direction: column;
   padding: 2rem;
 
-  h1 {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-
-  h2 {
-    text-align: center;
-    font-size: 1.2rem;
-    color: ${(props) => props.theme.textSecondary};
-  }
-
   img {
-    height: 75%;
+    height: 72%;
     width: auto;
-    max-width: 75%;
+    max-width: 72%;
     object-fit: contain;
     margin: auto;
   }
+`;
+
+export const HeroTitle = styled.h1`
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+`;
+
+export const HeroSubtitle = styled.h2`
+  text-align: center;
+  font-size: 1.2rem;
+  color: ${(props) => props.theme.textSecondary};
 `;
 
 export const ScrollIndicator = styled.div`
