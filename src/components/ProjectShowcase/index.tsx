@@ -11,7 +11,9 @@ interface ProjectShowcasePropTypes {
   projects: Project[];
 }
 
-export default function Index({ projects }: ProjectShowcasePropTypes) {
+export default function ProjectShowcase({
+  projects,
+}: ProjectShowcasePropTypes) {
   return (
     <Wrapper>
       <ProjectShowcaseTitle>Projects</ProjectShowcaseTitle>
