@@ -93,5 +93,7 @@ export const BottomNavigationContainer = styled.div`
   text-align: center;
   padding: 2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 `;

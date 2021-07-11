@@ -49,22 +49,25 @@ export const Card = styled.div`
   }
 `;
 
-export const CTAButton = styled.button`
+export const Button = styled.button`
   border: none;
   font-size: 1.4rem;
-  background-color: ${(props) => props.theme.main};
+  background-color: ${(props) => props.theme.backgroundTertiary};
   cursor: pointer;
   color: ${(props) => props.theme.textPrimary};
   font-weight: bold;
-  padding: 0.6rem 5rem;
+  padding: 0.6rem 2rem;
   border-radius: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition-duration: 200ms;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   :hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     transform: translateY(-10%);
-    background-color: ${(props) => props.theme.mainLight};
+    background-color: ${(props) => props.theme.backgroundTertiary};
   }
 
   @media (min-width: ${size.tablet}) {
@@ -78,6 +81,14 @@ export const CTAButton = styled.button`
   @media (min-width: ${size.desktop}) {
     font-size: 1rem;
   }
+`;
+
+export const CTAButton = styled(Button)`
+  padding: 0.6rem 5rem;
+  background-color: ${(props) => props.theme.main};
+
+  :hover {
+    background-color: ${(props) => props.theme.mainLight};
 `;
 
 export default GlobalStyle;

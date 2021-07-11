@@ -5,13 +5,13 @@ import {
   BottomNavigationContainer,
   FeaturesContainer,
   Hero,
+  HeroSubtitle,
+  HeroTitle,
   ScrollIndicator,
   Wrapper,
-  HeroTitle,
-  HeroSubtitle,
 } from './styles/Hibi';
 import Link from 'next/link';
-import { CTAButton } from 'styles/Global';
+import { Button, CTAButton } from 'styles/Global';
 import FeatureCard from 'components/FeatureCard';
 import Footer from 'components/Footer';
 
@@ -31,7 +31,10 @@ export default function HibiContainer() {
             href="https://www.github.com/MarcDonald/Hibi/releases/latest"
             passHref={true}
           >
-            <CTAButton>Download</CTAButton>
+            <CTAButton>
+              <img src="download-icon.svg" alt="Download Now" />
+              <span>Download Now</span>
+            </CTAButton>
           </Link>
 
           <ScrollIndicator>
@@ -67,40 +70,35 @@ export default function HibiContainer() {
         </FeaturesContainer>
         <Bottom>
           <BottomCTAContainer>
-            <h1>Check it out</h1>
             <div>
-              <h2>View the source code</h2>
-              <Link
-                href="https://www.github.com/MarcDonald/Hibi"
-                passHref={true}
-              >
-                <CTAButton>
-                  <img src="code-icon.svg" alt="View Source Code" />
-                </CTAButton>
-              </Link>
+              <HeroTitle>Hibi「日々」</HeroTitle>
+              <HeroSubtitle>Check it out</HeroSubtitle>
             </div>
-            <div>
-              <h2>Download now</h2>
-              <Link
-                href="https://www.github.com/MarcDonald/Hibi/releases/latest"
-                passHref={true}
-              >
-                <CTAButton>
-                  <img src="download-icon.svg" alt="Download Now" />
-                </CTAButton>
-              </Link>
-            </div>
+            <Link href="https://www.github.com/MarcDonald/Hibi" passHref={true}>
+              <CTAButton>
+                <img src="code-icon.svg" alt="View Source Code" />
+                <span>View Source Code</span>
+              </CTAButton>
+            </Link>
+            <Link
+              href="https://www.github.com/MarcDonald/Hibi/releases/latest"
+              passHref={true}
+            >
+              <CTAButton>
+                <img src="download-icon.svg" alt="Download Now" />
+                <span>Download Now</span>
+              </CTAButton>
+            </Link>
           </BottomCTAContainer>
           <BottomNavigationContainer>
-            <h1>Navigation</h1>
-            <div>
-              <Link href="/">
-                <button>Back to Top</button>
-              </Link>
-              <Link href="/">
-                <button>Home</button>
-              </Link>
-            </div>
+            <Button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
+              Back to Top
+            </Button>
+            <Link href="/">
+              <Button>Home</Button>
+            </Link>
           </BottomNavigationContainer>
           <Footer />
         </Bottom>

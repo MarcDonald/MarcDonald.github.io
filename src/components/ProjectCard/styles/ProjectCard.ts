@@ -76,6 +76,9 @@ export const TechnologiesTitle = styled.h5`
 export const CTAContainer = styled.div`
   margin: 0.6em;
   align-self: center;
+  display: flex;
+  justify-content: center;
+
   @media (min-width: ${size.desktop}) {
     grid-column-start: 1;
     grid-column-end: 3;
